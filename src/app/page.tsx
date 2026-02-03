@@ -1,3 +1,50 @@
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-black font-sans">
+      <main className="flex flex-col gap-8 w-full max-w-2xl">
+        <h1 className="sm:text-8xl text-6xl font-bold mb-0 text-center text-white font-fancy">amuse-bouche</h1>
+        <Link
+          href="/page1"
+          className="block py-6 px-4 rounded-xl bg-black border-2 border-white text-white text-center font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:text-[#ff00ff]"
+        >
+          Page 1
+        </Link>
+
+        <Link
+          href="/page2"
+          className="block py-6 px-4 rounded-xl bg-black border-2 border-white text-white text-center font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:text-[#ff00ff]"
+        >
+          Page 2
+        </Link>
+
+        <Link
+          href="/page3"
+          className="block py-6 px-4 rounded-xl bg-black border-2 border-white text-white text-center font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:text-[#ff00ff]"
+        >
+          Page 3
+        </Link>
+
+        <Link
+          href="/page4"
+          className="block py-6 px-4 rounded-xl bg-black border-2 border-white text-white text-center font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:text-[#ff00ff]"
+        >
+          Page 4
+        </Link>
+
+        <Link
+          href="/page5"
+          className="block py-6 px-4 rounded-xl bg-black border-2 border-white text-white text-center font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:text-[#ff00ff]"
+        >
+          Page 5
+        </Link>
+      </main>
+    </div>
+  );
+}
+
+/* Original boilerplate code:
 import Image from "next/image";
 
 export default function Home() {
@@ -13,7 +60,7 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50 font-fancy">
             To get started, edit the page.tsx file.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
@@ -63,3 +110,4 @@ export default function Home() {
     </div>
   );
 }
+*/
