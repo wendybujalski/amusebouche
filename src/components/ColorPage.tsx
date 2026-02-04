@@ -1,35 +1,30 @@
-import Link from 'next/link';
-import React from 'react';
+import React, { ReactNode } from 'react';
+import Button from './Button';
 
 interface ColorPageProps {
   backgroundColor: string; // Custom hex color value
   title: string;
-  text: string;
+  children?: ReactNode;
 }
 
 const ColorPage: React.FC<ColorPageProps> = ({
   backgroundColor,
   title,
-  text
+  children
 }) => {
   return (
     <div
       className="flex min-h-screen items-center justify-center"
       style={{ backgroundColor }}
     >
-      <main className="flex flex-col items-center justify-center w-full max-w-4xl p-8">
-        <h1 className="text-4xl font-bold text-center text-white">
+      <main className="flex flex-col items-center justify-center w-full max-w-4xl p-8 text-center text-white text-xl">
+        <h1 className="text-4xl font-bold">
           {title}
         </h1>
-        <p className="mt-4 text-xl text-center text-white">
-          {text}
-        </p>
-        <Link
-          href="/"
-          className="mt-6 py-3 px-6 rounded-lg bg-black text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:bg-gray-800"
-        >
+        {children && <div className="my-6">{children}</div>}
+        <Button href="/" size="large">
           Back to Main Page
-        </Link>
+        </Button>
       </main>
     </div>
   );

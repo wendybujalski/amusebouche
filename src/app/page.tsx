@@ -6,10 +6,10 @@ export default function Home() {
       <main className="flex flex-col gap-8 w-full max-w-2xl">
         <h1 className="sm:text-8xl text-6xl font-bold mb-0 text-center text-white font-fancy">amuse-bouche</h1>
         <Link
-          href="/page1"
+          href="/tictactoe"
           className="block py-6 px-4 rounded-xl bg-black border-2 border-white text-white text-center font-bold text-xl transition-all duration-300 hover:scale-105 hover:border-[#ff00ff] hover:text-[#ff00ff]"
         >
-          Page 1
+          Tic Tac Toe
         </Link>
 
         <Link
