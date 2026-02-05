@@ -1,11 +1,12 @@
-import ColorPage from '@/src/components/ColorPage';
+import ColorPage from '@/components/ColorPage';
 
 export default function Page3() {
   return (
     <ColorPage
       backgroundColor="#7C4DFF"
       title="Page 3"
-      text="Bright purple background"
-    />
+    >
+      Bright purple background
+    </ColorPage>
   );
 }

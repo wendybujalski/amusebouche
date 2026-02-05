@@ -1,11 +1,12 @@
-import ColorPage from '@/src/components/ColorPage';
+import ColorPage from '@/components/ColorPage';
 
 export default function Page4() {
   return (
     <ColorPage
       backgroundColor="#18FFFF"
       title="Page 4"
-      text="Bright cyan background"
-    />
+    >
+      Bright cyan background
+    </ColorPage>
   );
 }

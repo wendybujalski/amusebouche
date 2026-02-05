@@ -1,11 +1,12 @@
-import ColorPage from '@/src/components/ColorPage';
+import ColorPage from '@/components/ColorPage';
 
 export default function Page2() {
   return (
     <ColorPage
       backgroundColor="#FFD740"
       title="Page 2"
-      text="Bright yellow background"
-    />
+    >
+      Bright yellow background
+    </ColorPage>
   );
 }

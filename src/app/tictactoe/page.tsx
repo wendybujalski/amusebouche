@@ -1,5 +1,5 @@
-import ColorPage from '@/src/components/ColorPage';
-import TicTacToe from '@/src/components/TicTacToe';
+import ColorPage from '@/components/ColorPage';
+import TicTacToe from '@/components/TicTacToe';
 
 export default function TicTacToePage() {
   return (
